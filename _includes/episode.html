@@ -1,0 +1,18 @@
+<div class="post">
+  <div class="episode-{{include.episode}}"></div>
+</div>
+
+<script type="module">
+  import { Player } from "https://cdn.jsdelivr.net/npm/shikwasa@2.2.0/+esm";
+
+  const player = new Player({
+    container: document.querySelector(".episode-{{include.episode}}"),
+    themeColor: "#ed70c0",
+    audio: {
+      title: "{{include.title}}",
+      artist: "Decadi",
+      cover: "{{include.cover}}",
+      src: "{{include.file}}",
+    },
+  });
+</script>

@@ -1,26 +1,12 @@
 ---
 layout: default
+pagination:
+  enabled: true
 ---
 
 {% for post in paginator.posts %}
-
-<div class="post">
-  <div class="player-container"></div>
-  <script type="module">
-    import { Player } from "https://cdn.jsdelivr.net/npm/shikwasa@2.2.0/+esm";
-
-    const player = new Player({
-      container: document.querySelector(".player-container"),
-      themeColor: "#ed70c0",
-      audio: {
-        title: "{{post.title}}",
-        artist: "Decadi",
-        cover: "{{post.cover}}",
-        src: "{{post.file}}",
-      },
-    });
-  </script>
+<div>
+  {% include episode.html episode=post.episode title=post.title cover=post.cover
+  file=post.file %}
 </div>
 {% endfor %}
-
-<script type="module"></script>

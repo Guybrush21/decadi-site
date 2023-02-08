@@ -1,36 +1,30 @@
 title: "Decadi"
 description: "un millennio in mezzo"
 podcast-description: "Nic e Tere, classi 92 e 02 si confrontano sui più svariati argomenti evidenziando punti di vista differenti giocando su 10 anni di gap generazionale."
-url:  "https://decadi.it/" # Actual base url of the website
-baseurl: "/"                    # url of the jekyll blog. e.g. if you set url to "mysite.com" and baseurl to "blog", the jekyll website will work on "mysite.com/blog"
+url: "https://decadi.it/" # Actual base url of the website
+baseurl: "/" # url of the jekyll blog. e.g. if you set url to "mysite.com" and baseurl to "blog", the jekyll website will work on "mysite.com/blog"
 author:
-  name: "Nicholas Pellizer"
+  name: "Nicholas Pellizer e Teresa Codaglio"
   email: "info@decadi.it"
   url: "https://decadi.it"
 permalink: pretty
-permalink: /:title
+
 keywords: [podcast, jekyll]
 
 #Plugins
-plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-sitemap]
-
-#exclude: [_podcast.rss] #Ignore this, it will be used in case I decide to add rss feed
+plugins: [jekyll-paginate-v2, jekyll-seo-tag, jekyll-sitemap]
 
 #Pagination
-paginate: 5
-paginate_path: "/page-:num/"
+pagination:
+  enabled: true
+  per_page: 10
+  permalink: "/page/:num"
 
 #Sass
 sass:
   style: compressed
   sourcemap: never
 
-#SEO
-# twitter:
-#   username: PandaSekh
-#   card: summary
-# facebook:
-#   app_id: 
 logo: /assets/img/Podcast_Cover.png
 social:
   name: Decadi
