@@ -4,12 +4,20 @@ pages:
   - { name: "Episodi", link: "episodes.html" }
   - { name: "About", link: "about.html" }
 social:
-  - { icon: "instagram", type: "brand", link: "#" }
+  - {
+      icon: "instagram",
+      type: "brand",
+      link: "https://www.instagram.com/decadi.podcast/#",
+    }
   #  - { icon: "twitter", type: "brand", link: "#" }
   #  - { icon: "facebook", type: "brand", link: "#" }
   #  - { icon: "youtube", type: "brand", link: "#" }
   - { icon: "envelope", type: "solid", link: "mailto:info@decadi.it" }
-  - { icon: "rss", type: "solid", link: "#" }
+  - {
+      icon: "rss",
+      type: "solid",
+      link: "https://anchor.fm/s/d9dfa7f8/podcast/rss",
+    }
 
 websites-podcast:
   - {
