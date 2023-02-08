@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Episodes
+permalink: /episodes/
 ---
 
 <div class = "episodes">

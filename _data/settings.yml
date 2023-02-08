@@ -1,8 +1,8 @@
 analytics-id:
 #Pages
 pages:
-  - { name: "Episodi", link: "episodes.html" }
-  - { name: "About", link: "about.html" }
+  - { name: "Episodi", link: "episodes" }
+  - { name: "About", link: "about" }
 social:
   - {
       icon: "instagram",
@@ -30,6 +30,3 @@ websites-podcast:
       name: "Amazon Music",
       link: "https://music.amazon.it/podcasts/8adfc387-da1b-45f9-878d-e46dd00d44e1/decadi-un-millennio-in-mezzo",
     }
-
-translate-date: true #See _includes/date.html to translate the months' name
-shownotes: true

@@ -8,7 +8,6 @@ author:
   email: "info@decadi.it"
   url: "https://decadi.it"
 permalink: pretty
-
 keywords: [podcast, jekyll]
 
 #Plugins
@@ -18,7 +17,6 @@ plugins: [jekyll-paginate-v2, jekyll-seo-tag, jekyll-sitemap]
 pagination:
   enabled: true
   per_page: 10
-  permalink: "/page/:num"
 
 #Sass
 sass:
@@ -29,7 +27,4 @@ logo: /assets/img/Podcast_Cover.png
 social:
   name: Decadi
   links:
-    - https://github.com/PandaSekh
-    - https://twitter.com/PandaSekh
-    - https://www.linkedin.com/in/alessio-franceschi/
 lang: it
