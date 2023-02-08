@@ -39,18 +39,3 @@ social:
     - https://twitter.com/PandaSekh
     - https://www.linkedin.com/in/alessio-franceschi/
 lang: it
-
-#Podcast Metadata. Used by the RSS Feed, which currently isn't in use. So you can avoid this
-podcast_title: Jekyll Podcaster
-podcast_author: Alessio Franceschi
-podcast_email: alessiofranceschi2@gmail.com
-podcast_subtitle: "A Jekyll Theme designed for Podcasters"
-podcast_summary: "A Jekyll Theme designed for Podcasters. This is your podcast's summary."
-podcast_description: "A Jekyll Theme designed for Podcasters. This is your podcast's description."
-podcast_explicit: "no"
-podcast_type: serial 
-podcast_lang: en
-podcast_launch: "2019-07-20" #Launch date of your podcast
-podcast_copyright: "&#xA9;Alessio Franceschi"
-podcast_feed: 
-podcast_artwork: "/assets/img/Podcast_Cover.png"

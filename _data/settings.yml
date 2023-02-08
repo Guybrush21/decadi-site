@@ -12,10 +12,16 @@ social:
   - { icon: "rss", type: "solid", link: "#" }
 
 websites-podcast:
-  - { name: "Spotify", link: "#" }
-  - { name: "YouTube", link: "#" }
-  - { name: "Spreaker", link: "#" }
+  - {
+      name: "Spotify",
+      link: "https://open.spotify.com/show/7tc6aio5v6rB5iCeEbAS7e",
+    }
+  - { name: "Anchor", link: "https://anchor.fm/decadi-millenio-in-mezzo" }
   - { name: "Google Podcast", link: "#" }
+  - {
+      name: "Amazon Music",
+      link: "https://music.amazon.it/podcasts/8adfc387-da1b-45f9-878d-e46dd00d44e1/decadi-un-millennio-in-mezzo",
+    }
 
 translate-date: true #See _includes/date.html to translate the months' name
 shownotes: true
