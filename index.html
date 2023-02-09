@@ -10,15 +10,15 @@ pagination:
 <div class="text-3xl">
   <p>
     Ti va di ascoltare subito l'ultimo episodio, che poi sarebbe il numero
-    <span class="font-bold underline">{{post.episode}}</span>. Basta cliccare
-    play.
+    <span class="font-bold underline bg-pink">{{post.episode}}</span>. Basta
+    cliccare play.
   </p>
   <p>
     L'episodio si intitola
-    <span class="underline font-bold">{{post.title}}</span> e se il titolo non
-    ti basta una descrizione veloce potrebbe essere questa:
+    <span class="underline font-bold bg-pink">{{post.title}}</span> e se il
+    titolo non ti basta una descrizione veloce potrebbe essere questa:
+    <span class="underline font-bold bg-pink">{{post.description}}</span>
   </p>
-  <p class="underline font-bold">{{post.description}}</p>
   {% include episode.html episode=post.episode title=post.title cover=post.cover
   file=post.file %}
 </div>

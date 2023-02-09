@@ -1,10 +1,12 @@
-<div class="border-2 border-pink rounded-lg p-1 text-center">
-  <img src="{{"assets/img/Podcast_Cover.png" | absolute_url}}" alt="Podcast
-  Cover">
+<div
+  class="border-2 border-pink rounded-lg p-1 text-center flex flex-col justify-center items-center text-2xl"
+>
+  <img class="max-h-52" src="{{"assets/img/Podcast_Cover.png" | absolute_url}}"
+  alt="Podcast Cover">
 
-  <h3 class="font-bold">{{site.title}}</h3>
-  <h4 class="font-semibold">{{site.description}}</h4>
-  <div class="mt-2 text-2xl">
+  <h3>{{site.title}}</h3>
+  <h4>{{site.description}}</h4>
+  <div class="mt-2">
     {% for item in site.data.settings.social %} {% if item.type == "brand"%}
     <a href="{{ item.link }}" target="_blank" id="{{item.icon}}"
       ><i class="fab fa-{{item.icon}}" aria-hidden="true"></i
@@ -19,10 +21,10 @@
     ></a>
     {% endif %} {% endfor %}
   </div>
-  <div id="ascoltare">
+  <div>
     <span class="text-xl">Come ascoltarci</span>
     <div>
-      <ul class="font-medium text-pink">
+      <ul class="text-3xl text-pink">
         {% for item in site.data.settings.websites-podcast %}
         <li class="hover:underline">
           <a href="{{ item.link }}"> {{ item.name }}</a>
