@@ -30,6 +30,10 @@ module.exports = {
       display: ['"Rubik Vinyl"', "cursive"],
     },
   },
-  extend: {},
+  extend: {
+    backgroundImage: {
+      wave: "url('/assets/img/wave.svg')",
+    },
+  },
   plugins: [],
 };

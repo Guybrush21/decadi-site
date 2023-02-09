@@ -3,10 +3,22 @@ layout: default
 title: Decadi
 pagination:
   enabled: true
+  per_page: 1
 ---
 
 {% for post in paginator.posts %}
-<div>
+<div class="text-3xl">
+  <p>
+    Ti va di ascoltare subito l'ultimo episodio, che poi sarebbe il numero
+    <span class="font-bold underline">{{post.episode}}</span>. Basta cliccare
+    play.
+  </p>
+  <p>
+    L'episodio si intitola
+    <span class="underline font-bold">{{post.title}}</span> e se il titolo non
+    ti basta una descrizione veloce potrebbe essere questa:
+  </p>
+  <p class="underline font-bold">{{post.description}}</p>
   {% include episode.html episode=post.episode title=post.title cover=post.cover
   file=post.file %}
 </div>
