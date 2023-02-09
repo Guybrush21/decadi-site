@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<div class="font-mono text-4xl">
+  <h2 class="text-pink text-6xl font-bold">Episodi</h2>
+  <ul>
+    {% for post in site.posts %}
+    <li>
+      <a class="hover:underline" href="{{ post.url }}"
+        ><span class="font-mono">{{post.episode}}.</span> {{ post.title }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

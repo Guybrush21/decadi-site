@@ -11,7 +11,10 @@ permalink: pretty
 keywords: [podcast, jekyll]
 
 #Plugins
-plugins: [jekyll-paginate-v2, jekyll-seo-tag, jekyll-sitemap]
+plugins: [jekyll-paginate-v2,jekyll-postcss]
+
+postcss:
+  cache: false
 
 #Pagination
 pagination:
