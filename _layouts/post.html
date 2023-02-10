@@ -2,7 +2,15 @@
 layout: default
 ---
 
-<div class="single-post">
-  {%include episode.html episode=page.episode title=page.title cover=page.cover
+<div class="text-3xl">
+  <p class="text-xl underline">
+    ep.<span class="font-bold">{{page.episode}}</span>
+  </p>
+  <h2 class="font-bold bg-pink text-5xl">{{page.title}}</h2>
+
+  <p>{{page.description}}</p>
+
+  {% include episode.html episode=page.episode title=page.title cover=page.cover
   file=page.file %}
 </div>
+{{page.content}}
