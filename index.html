@@ -6,20 +6,19 @@ pagination:
   per_page: 1
 ---
 
-{% for post in paginator.posts %}
 <div class="text-3xl">
   <p class="py-2">
     Se ti va di ascoltare subito l'ultimo episodio, che poi sarebbe il numero
-    <span class="underline bg-pink">{{post.episode}}</span>, ti basta cliccare
-    play.
+    <span class="underline bg-pink">{{site.posts.first.episode}}</span>, ti
+    basta cliccare play.
   </p>
   <p class="py-2">
     L'episodio si intitola
-    <span class="underline bg-pink">{{post.title}}</span> e se il titolo non ti
-    basta una descrizione veloce potrebbe essere questa:
-    <span class="underline bg-pink">{{post.description}}</span>
+    <span class="underline bg-pink">{{site.posts.first.title}}</span> e se il
+    titolo non ti basta una descrizione veloce potrebbe essere questa:
+    <span class="underline bg-pink">{{site.posts.first.description}}</span>
   </p>
-  {% include episode.html episode=post.episode title=post.title cover=post.cover
-  file=post.file %}
+  {% include episode.html episode=site.posts.first.episode
+  title=site.posts.first.title cover=site.posts.first.cover
+  file=site.posts.first.file %}
 </div>
-{% endfor %}
