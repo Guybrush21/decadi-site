@@ -1,8 +1,14 @@
 {
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./src/input.css -o ./assets/css/tailwind.css --minify",
+    "watch:css": "npx tailwindcss -i ./src/input.css -o ./assets/css/tailwind.css --watch",
+    "build": "npm run build:css && bundle exec jekyll build",
+    "serve": "npm run build:css && bundle exec jekyll serve"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
     "cssnano": "^5.1.14",
     "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.6"
+    "tailwindcss": "^3.4.0"
   }
 }
